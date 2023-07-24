@@ -4,6 +4,7 @@
 
 			<listeners>
 			<listener class-name="testng.utilities.Listeners"/>
+			<listener class-name="testng.utilities.ExtentReportManager"></listener>
 			</listeners>
 			
 			
