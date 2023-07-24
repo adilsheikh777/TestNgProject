@@ -157,6 +157,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;testng.utilities.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;testng.utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;value.comfor3rduser&quot;/&gt;
@@ -225,7 +226,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'user2Login')
 data.setCell(0, 2, 'testng.test.SecondTest')
-data.setCell(0, 3, 12);
+data.setCell(0, 3, 7);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'user2SignIn')
 data.setCell(1, 2, 'testng.test.SecondTest')
@@ -234,7 +235,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 8 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -253,18 +254,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testng.test.FourthTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">SignInForm</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">testng.test.ThirdTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">user3SignIn</span>
-                <br/>
                 <span class="ignored-method-name">safeLogin</span>
+                <br/>
+                <span class="ignored-method-name">user3SignIn</span>
                 <br/>
                 <span class="ignored-method-name">user3Login</span>
                 <br/>
@@ -276,6 +270,13 @@ return data;
                 <span class="ignored-method-name">user1Login</span>
                 <br/>
                 <span class="ignored-method-name">user1SignIn</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testng.test.FourthTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SignInForm</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -294,7 +295,7 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">user2SignIn</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

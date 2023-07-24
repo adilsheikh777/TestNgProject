@@ -1,25 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-24T16:31:46 IST" name="Suite" finished-at="2023-07-24T16:31:47 IST" duration-ms="809">
+  <suite started-at="2023-07-24T17:12:08 IST" name="Suite" finished-at="2023-07-24T17:12:09 IST" duration-ms="854">
     <groups>
       <group name="smoke">
-        <method signature="SecondTest.user2Login()[pri:0, instance:testng.test.SecondTest@d29f28]" name="user2Login" class="testng.test.SecondTest"/>
-        <method signature="SecondTest.user2SignIn()[pri:0, instance:testng.test.SecondTest@d29f28]" name="user2SignIn" class="testng.test.SecondTest"/>
+        <method signature="SecondTest.user2Login()[pri:0, instance:testng.test.SecondTest@6a84a97d]" name="user2Login" class="testng.test.SecondTest"/>
+        <method signature="SecondTest.user2SignIn()[pri:0, instance:testng.test.SecondTest@6a84a97d]" name="user2SignIn" class="testng.test.SecondTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-07-24T16:31:46 IST" name="Test" finished-at="2023-07-24T16:31:47 IST" duration-ms="809">
+    <test started-at="2023-07-24T17:12:08 IST" name="Test" finished-at="2023-07-24T17:12:09 IST" duration-ms="854">
+      <class name="testng.test.FirstTest">
+        <test-method signature="user1SignIn()[pri:0, instance:testng.test.FirstTest@732c2a62]" started-at="2023-07-24T17:12:08 IST" name="user1SignIn" finished-at="2023-07-24T17:12:08 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user1SignIn -->
+        <test-method signature="user1Login()[pri:0, instance:testng.test.FirstTest@732c2a62]" started-at="2023-07-24T17:12:08 IST" name="user1Login" finished-at="2023-07-24T17:12:08 IST" depends-on-methods="testng.test.FirstTest.user1SignIn" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user1Login -->
+      </class> <!-- testng.test.FirstTest -->
       <class name="testng.test.SecondTest">
-        <test-method signature="user2Login()[pri:0, instance:testng.test.SecondTest@d29f28]" started-at="2023-07-24T16:31:47 IST" name="user2Login" finished-at="2023-07-24T16:31:47 IST" duration-ms="13" status="PASS">
+        <test-method signature="user2Login()[pri:0, instance:testng.test.SecondTest@6a84a97d]" started-at="2023-07-24T17:12:08 IST" name="user2Login" finished-at="2023-07-24T17:12:08 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user2Login -->
-        <test-method signature="user2SignIn()[pri:0, instance:testng.test.SecondTest@d29f28]" started-at="2023-07-24T16:31:47 IST" name="user2SignIn" finished-at="2023-07-24T16:31:47 IST" duration-ms="2" status="PASS">
+        <test-method signature="user2SignIn()[pri:0, instance:testng.test.SecondTest@6a84a97d]" started-at="2023-07-24T17:12:09 IST" name="user2SignIn" finished-at="2023-07-24T17:12:09 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user2SignIn -->
       </class> <!-- testng.test.SecondTest -->
+      <class name="testng.test.ThirdTest">
+        <test-method signature="safeLogin()[pri:0, instance:testng.test.ThirdTest@6c130c45]" started-at="2023-07-24T17:12:09 IST" name="safeLogin" finished-at="2023-07-24T17:12:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- safeLogin -->
+        <test-method signature="user3Login(java.lang.String)[pri:0, instance:testng.test.ThirdTest@6c130c45]" started-at="2023-07-24T17:12:09 IST" name="user3Login" finished-at="2023-07-24T17:12:09 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[value.comfor3rduser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user3Login -->
+        <test-method signature="user3SignIn()[pri:0, instance:testng.test.ThirdTest@6c130c45]" started-at="2023-07-24T17:12:09 IST" name="user3SignIn" finished-at="2023-07-24T17:12:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user3SignIn -->
+      </class> <!-- testng.test.ThirdTest -->
+      <class name="testng.test.FourthTest">
+        <test-method signature="SignInForm(java.lang.String,java.lang.String)[pri:0, instance:testng.test.FourthTest@6d3a388c]" started-at="2023-07-24T17:12:09 IST" name="SignInForm" data-provider="getData" finished-at="2023-07-24T17:12:09 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joseph]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leyman]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInForm -->
+        <test-method signature="SignInForm(java.lang.String,java.lang.String)[pri:0, instance:testng.test.FourthTest@6d3a388c]" started-at="2023-07-24T17:12:09 IST" name="SignInForm" data-provider="getData" finished-at="2023-07-24T17:12:09 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Steve]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[smith]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInForm -->
+        <test-method signature="SignInForm(java.lang.String,java.lang.String)[pri:0, instance:testng.test.FourthTest@6d3a388c]" started-at="2023-07-24T17:12:09 IST" name="SignInForm" data-provider="getData" finished-at="2023-07-24T17:12:09 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Carlson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInForm -->
+      </class> <!-- testng.test.FourthTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
